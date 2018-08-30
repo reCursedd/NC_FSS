@@ -182,8 +182,10 @@ def pg24():
 def pg25():
     """Randomness"""
     import random
-    x = random.randrange(1,3)
-    y = random.randrange(4,7)
+    random.seed(1)
+    x = random.random()
+    random.seed(2)
+    y = random.random()
     assert x!=y
 
 @O.k
