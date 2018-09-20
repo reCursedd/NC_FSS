@@ -1,4 +1,4 @@
-from w12.w1 import O
+from util import O
 from pprint import pprint
 DATA1 ="""
 outlook,$temp,?humidity,windy,play
