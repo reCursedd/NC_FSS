@@ -43,7 +43,6 @@ class Num:
 
         if (self.n >= 2):
             self.sd = math.pow(self.m2/(self.n - 1 + 10**(-32)), 0.5)
-            print(self.sd)
         return x
 
     def numDec(self, x):
