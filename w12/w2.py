@@ -121,12 +121,13 @@ def ok0(s):
     # prep(cols(rows(lines(s))))
     for row in prep(cols(rows(lines(s)))):
         print(row)
+        return row
 
-@O.k
-def ok1(): ok0(DATA1)
+# @O.k
+# def ok1(): ok0(DATA1)
 
-@O.k
-def ok2(): ok0(DATA2)
+# @O.k
+# def ok2(): ok0(DATA2)
 
 # @O.k
 # def ok3():
