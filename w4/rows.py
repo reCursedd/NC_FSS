@@ -38,6 +38,7 @@ class Data:
                     self.nums[c] = Num(0)
                 else:
                     self.syms[c] = Sym()
+                    #----why are setting goals for length of us?  Shouldn't it be for each column?
                 if re.match("<",x) :
                     self.w[c] = -1
                 elif re.match(">",x):
@@ -96,19 +97,19 @@ class Data:
             print('{:<8} {:<14} {:<4} {:<10.2f} {:<8.2f}'.format(i+1, self.name[i], num.n, num.mu, (num.sd)))
 
 # Can't we manually test
-@util.O.k
-def rowTest():
-    d1 = Data()
-    print('\n\n weather.csv')
-    x = d1.readerRows("weather.csv")
-    d1.display()
-
-    d2 = Data()
-    print('\n\n weatherLong.csv')
-    d2.readerRows("weatherLong.csv")
-    d2.display()
-
-    d3 = Data()
-    print('\n\n auto.csv')
-    d3.readerRows("auto.csv")
-    d3.display()
+# @util.O.k
+# def rowTest():
+#     d1 = Data()
+#     print('\n\n weather.csv')
+#     x = d1.readerRows("weather.csv")
+#     d1.display()
+#
+#     d2 = Data()
+#     print('\n\n weatherLong.csv')
+#     d2.readerRows("weatherLong.csv")
+#     d2.display()
+#
+#     d3 = Data()
+#     print('\n\n auto.csv')
+#     d3.readerRows("auto.csv")
+#     d3.display()
