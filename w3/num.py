@@ -61,12 +61,12 @@ class Num:
 
         return x
 
-    # Why do we need to normalize
     def numNorm(self, x):
         if x == "?":
             a = 0.5
         else:
-            a = (x-self.lo) / (self.hi - self.lo + 10**32)
+            x = float(x)
+            a = (x-self.lo) / (self.hi - self.lo + pow(10,(-1)*32))
         return a
 
     def numMedian(self):
